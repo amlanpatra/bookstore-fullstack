@@ -1,0 +1,35 @@
+[
+  {
+    "id": "12",
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "Rich dad middle middle middle middle middle middle middle middle middle middle middle middle",
+    "cover_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2yTeQXlsR6213yM_pXQt4Pb2joMVthPQHqhdWcDex&s",
+    "price": "120",
+    "category": "non fiction",
+    "genre": "biography",
+    "publication_date": "2015-11-10"
+  },
+  {
+    "id": "13",
+    "title": "Book 2",
+    "author": "Robert 2",
+    "description": "Rich dad middle middle middle middle middle middle middle middle middle middle middle middle",
+    "cover_image": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg",
+    "price": "160",
+    "category": "non fiction",
+    "genre": "biography",
+    "publication_date": "2015-11-10"
+  },
+  {
+    "id": "15",
+    "title": "Book 3",
+    "author": "Robert 3",
+    "description": "Rich4",
+    "cover_image": "https://plus.unsplash.com/premium_photo-1674568674849-46cfddccfdb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": "180",
+    "category": "fiction",
+    "genre": "biography",
+    "publication_date": "2015-11-10"
+  }
+]

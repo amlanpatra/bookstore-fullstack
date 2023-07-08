@@ -1,0 +1,53 @@
+visible : title, author, description, cover image, price, ratings
+hidden : genre, publication date
+
+extra feature : cart - single user
+search by : title, author, category, 
+filter : genre, price-range, publication date
+
+flow : get data on change from search. refine by genre, price-range, publication date at frontend
+
+dbs/tables
+books(all given)
+user(userid) - 101
+cartItems(userId, BookId)
+---------------------
+
+
+apis
+
+home
+start
+/allbooks : initially, home, get all card data in json (select * from books)
+/getIdsInCart/, home.js useEffect - array saved to "cartItemsId" 
+
+onChange of search input
+/search/?query=abc , home useEffect, get onChange of search (select ... ) done
+
+onClick of "Add to cart"
+/addtocart/?userid=101&bookid=12, home useEffect, when add to cart is clicked (insert into cartitems (userid, bookid) values ({userid}, {bookid}))
+
+cart
+start
+/allcart/?userid=101, cart useEffect onStart, (select * from books where id in (select distinct id from cartItems where userId={userid}))
+
+onClick of "Remove from cart"
+/removeFromCart/?userid=101&bookid=12, (delete from table cartItems where userid={userid} and bookid={bookid})
+
+
+
+
+features : 
+auto search on typing in search box
+loosely coupled components
+tailwind css
+fast api 
+reactjs
+loading and empty cart screen
+
+
+
+to be done : 
+1. create user and cartItem tables. enter userId 101 int user table
+2. how to send data to backend when "add to cart" is clicked? should send individual id ? or send the whole cartItemIds array
+3. send userId as prop from App.js to Home.jsx and Cart.jsx
